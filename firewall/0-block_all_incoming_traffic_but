@@ -1,6 +1,9 @@
 #check the status of ufw to make sure it is active by running:
 
-sudo ufw status
+
+sudo apt-get update
+sudo apt-get install ufw -y
+
 
 # If ufw is not active, you can enable it by running:
 suo ufw enable
@@ -17,9 +20,4 @@ sudo ufw allow 22/tcp
 sudo ufw allow 443/tcp
 sudo ufw allow 80/tcp
 
-# Verify that the rules have been added by running:
-
-sudo ufw show added
-
-# Finally, enable ufw by running:
-sudo ufw enable
+sudo ufw status
